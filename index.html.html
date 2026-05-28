@@ -1,0 +1,522 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aniklecia Estevam — UGC Creator</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root{
+      --bg:#f9f6f0;
+      --bg2:#f5f0e8;
+      --fg:#2a2420;
+      --muted:#8b8680;
+      --gold:#b8945a;
+      --gold-soft:#d7bc91;
+      --card:#ffffff;
+      --border:#e8e3d9;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      font-weight:300;
+      background:var(--bg);
+      color:var(--fg);
+      overflow-x:hidden;
+    }
+
+    .font-display{
+      font-family:'Playfair Display',serif;
+    }
+
+    .font-script{
+      font-family:'Dancing Script',cursive;
+      color:var(--gold);
+    }
+
+    .fade-in{
+      opacity:0;
+      transform:translateY(20px);
+      transition:opacity .6s ease,transform .6s ease;
+    }
+
+    .fade-in.visible{
+      opacity:1;
+      transform:none;
+    }
+
+    .work-card{
+      transition:transform .3s;
+    }
+
+    .work-card:hover{
+      transform:scale(1.03);
+    }
+
+    video{
+      display:block;
+      background:black;
+    }
+
+  </style>
+
+</head>
+
+<body class="w-full min-h-screen flex flex-col items-center">
+
+  <div class="w-full max-w-[480px] mx-auto px-5 py-10">
+
+    <!-- PROFILE -->
+    <section class="flex flex-col items-center text-center mb-10">
+
+      <div class="w-40 h-40 rounded-full overflow-hidden border-[3px] border-[var(--gold)] shadow-lg shadow-[var(--gold)]/20 mb-5">
+
+        <img
+          class="w-full h-full object-cover"
+          style="object-position:center 35%;"
+          src="aniklecia.png"
+          alt="Aniklecia Estevam"
+        >
+
+      </div>
+
+      <h1 class="font-display text-3xl font-bold">
+        Aniklecia Estevam
+      </h1>
+
+      <p class="font-script mt-1 text-4xl">
+        UGC Creator
+      </p>
+
+      <p class="mt-4 leading-relaxed text-[var(--muted)] text-center">
+        Não é sobre publicidade. É sobre conexão — e é isso que gera conversão.
+      </p>
+
+      <div class="flex gap-8 mt-6">
+
+        <div class="text-center">
+          <span class="block font-display font-bold text-xl">50+</span>
+          <span class="text-[11px] uppercase tracking-wider text-[var(--muted)]">
+            Projetos
+          </span>
+        </div>
+
+        <div class="text-center">
+          <span class="block font-display font-bold text-xl">20+</span>
+          <span class="text-[11px] uppercase tracking-wider text-[var(--muted)]">
+            Marcas
+          </span>
+        </div>
+
+        <div class="text-center">
+          <span class="block font-display font-bold text-xl">3</span>
+          <span class="text-[11px] uppercase tracking-wider text-[var(--muted)]">
+            Anos
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="fade-in mb-12">
+
+      <h2 class="font-display mb-5 text-center text-3xl font-bold">
+        Sobre mim
+      </h2>
+
+      <div class="space-y-4 text-center mb-8 text-[var(--muted)]">
+
+        <p>
+          Sou criadora de conteúdo focada em lifestyle, maternidade e beleza,
+          compartilhando minha rotina real de forma leve, estética e autêntica.
+        </p>
+
+        <p>
+          Meu objetivo é criar conteúdos que vão além da publicidade —
+          mostrando experiências reais com produtos no dia a dia,
+          gerando identificação, desejo e conexão com o público.
+        </p>
+
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+
+        <div class="work-card rounded-2xl overflow-hidden aspect-[3/4]">
+          <img
+            class="w-full h-full object-cover"
+            src="work-1.png"
+            alt=""
+          >
+        </div>
+
+        <div class="work-card rounded-2xl overflow-hidden aspect-[3/4]">
+          <img
+            class="w-full h-full object-cover"
+            src="work-2.png"
+            alt=""
+          >
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ESTILO DE CONTEÚDO -->
+    <section class="fade-in mb-12 p-8 rounded-3xl bg-[var(--bg2)]">
+
+      <div class="text-center mb-8">
+
+        <p class="text-[11px] tracking-widest uppercase text-[var(--muted)] mb-2">
+          02 — O que eu crio
+        </p>
+
+        <h2 class="font-display mb-8 text-center text-3xl font-bold">
+          Estilo de Conteúdo
+        </h2>
+
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <!-- VIDEO 1 -->
+        <div class="relative rounded-3xl overflow-hidden border-4 border-[var(--gold)] bg-black shadow-lg">
+
+          <video
+            class="w-full h-auto auto-poster"
+            preload="metadata"
+            controls
+            data-poster-time="1.2"
+          >
+            <source src="conteudo1.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="relative rounded-3xl overflow-hidden border-4 border-[var(--gold)] bg-black shadow-lg">
+
+          <video
+            class="w-full h-auto auto-poster"
+            preload="metadata"
+            controls
+            data-poster-time="2"
+          >
+            <source src="conteudo2.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div class="relative rounded-3xl overflow-hidden border-4 border-[var(--gold)] bg-black shadow-lg">
+
+          <video
+            class="w-full h-auto auto-poster"
+            preload="metadata"
+            controls
+            data-poster-time="1.5"
+          >
+            <source src="conteudo3.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div class="relative rounded-3xl overflow-hidden border-4 border-[var(--gold)] bg-black shadow-lg">
+
+          <video
+            class="w-full h-auto auto-poster"
+            preload="metadata"
+            controls
+            data-poster-time="3"
+          >
+            <source src="conteudo4.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+      </div>
+
+      <p class="text-center mt-6 text-sm leading-relaxed text-[var(--muted)]">
+        Meu conteúdo não é sobre publicidade,
+        é sobre conexão — e é isso que gera conversão.
+      </p>
+
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="fade-in mb-12">
+
+      <h2 class="font-display mb-5 text-center text-3xl font-bold">
+        Serviços
+      </h2>
+
+      <div class="space-y-3">
+
+        <div class="rounded-2xl p-5 border border-[var(--border)] bg-white">
+
+          <h3 class="font-display mb-1 text-xl font-semibold">
+            Vídeos UGC
+          </h3>
+
+          <p class="text-sm text-[var(--muted)]">
+            Conteúdo vertical para TikTok, Reels e anúncios pagos.
+          </p>
+
+        </div>
+
+        <div class="rounded-2xl p-5 border border-[var(--border)] bg-white">
+
+          <h3 class="font-display mb-1 text-xl font-semibold">
+            Fotos para marcas
+          </h3>
+
+          <p class="text-sm text-[var(--muted)]">
+            Lifestyle, still e flat lay com estética clean.
+          </p>
+
+        </div>
+
+        <div class="rounded-2xl p-5 border border-[var(--border)] bg-white">
+
+          <h3 class="font-display mb-1 text-xl font-semibold">
+            Depoimentos
+          </h3>
+
+          <p class="text-sm text-[var(--muted)]">
+            Narrativa autêntica com foco em confiança e conversão.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="fade-in text-center mb-10">
+
+      <h2 class="font-display mb-2 text-3xl font-bold">
+        Vamos criar juntas
+      </h2>
+
+      <p class="mb-6 text-[var(--muted)]">
+        Aberta para parcerias, campanhas e conteúdos personalizados.
+      </p>
+
+      <div class="flex flex-col gap-3">
+
+        <!-- WHATSAPP -->
+        <a
+          href="https://wa.me/558293356407"
+          target="_blank"
+          class="py-3 rounded-full tracking-widest uppercase bg-[var(--gold)] text-white text-sm text-center transition hover:opacity-90"
+        >
+          WhatsApp
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+          href="https://instagram.com/anilimaestevam"
+          target="_blank"
+          class="py-3 rounded-full tracking-widest uppercase border border-[var(--gold)]/40 text-center transition hover:bg-[var(--gold)] hover:text-white"
+        >
+          Instagram
+        </a>
+
+        <!-- TIKTOK -->
+        <a
+          href="https://tiktok.com/@anilimaestevam"
+          target="_blank"
+          class="py-3 rounded-full tracking-widest uppercase border border-[var(--gold)]/40 text-center transition hover:bg-[var(--gold)] hover:text-white"
+        >
+          TikTok
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-[10px] tracking-widest uppercase text-[var(--muted)] pt-6 border-t border-[var(--border)]">
+      © <span id="year"></span> · Aniklecia Estevam
+    </footer>
+
+  </div>
+
+  <script>
+
+    /* ANO AUTOMÁTICO */
+
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+
+
+
+    /* ANIMAÇÃO */
+
+    const observer = new IntersectionObserver(entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add('visible');
+
+        }
+
+      });
+
+    }, {
+
+      threshold: 0.1
+
+    });
+
+    document.querySelectorAll('.fade-in')
+      .forEach(el => observer.observe(el));
+
+
+
+    /* GERAR THUMB AUTOMÁTICA DOS VÍDEOS */
+
+    function generateVideoPoster(video, posterTime = 1){
+
+      return new Promise((resolve) => {
+
+        const canvas =
+          document.createElement('canvas');
+
+        const ctx =
+          canvas.getContext('2d');
+
+        const onSeeked = () => {
+
+          canvas.width =
+            video.videoWidth;
+
+          canvas.height =
+            video.videoHeight;
+
+          ctx.drawImage(video, 0, 0);
+
+          const poster =
+            canvas.toDataURL('image/jpeg', 0.92);
+
+          resolve(poster);
+
+        };
+
+        video.addEventListener(
+          'seeked',
+          onSeeked,
+          { once:true }
+        );
+
+        video.currentTime = posterTime;
+
+      });
+
+    }
+
+
+
+    document.querySelectorAll('video.auto-poster')
+      .forEach(video => {
+
+        const posterTime =
+          parseFloat(video.dataset.posterTime) || 1;
+
+        const hiddenVideo =
+          document.createElement('video');
+
+        hiddenVideo.muted = true;
+        hiddenVideo.preload = 'metadata';
+
+        hiddenVideo.src =
+          video.querySelector('source').src;
+
+        hiddenVideo.style.position = 'absolute';
+        hiddenVideo.style.opacity = '0';
+        hiddenVideo.style.pointerEvents = 'none';
+        hiddenVideo.style.width = '1px';
+        hiddenVideo.style.height = '1px';
+
+        document.body.appendChild(hiddenVideo);
+
+        hiddenVideo.addEventListener(
+          'loadedmetadata',
+
+          async () => {
+
+            try{
+
+              const poster =
+                await generateVideoPoster(
+                  hiddenVideo,
+                  posterTime
+                );
+
+              video.setAttribute(
+                'poster',
+                poster
+              );
+
+            }catch(err){
+
+              console.warn(
+                'Erro ao gerar thumbnail:',
+                err
+              );
+
+            }finally{
+
+              hiddenVideo.remove();
+
+            }
+
+          },
+
+          { once:true }
+
+        );
+
+      });
+
+
+
+    /* PAUSAR OUTROS VÍDEOS AUTOMATICAMENTE */
+
+    const allVideos =
+      document.querySelectorAll('video');
+
+    allVideos.forEach(currentVideo => {
+
+      currentVideo.addEventListener('play', () => {
+
+        allVideos.forEach(video => {
+
+          if(video !== currentVideo){
+
+            video.pause();
+
+          }
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
