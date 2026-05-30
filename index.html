@@ -1,3 +1,8 @@
+Se a ideia é focar 100% na **elegância e sofisticação**, a melhor escolha é usar a **Cormorant Garamond** em itálico. Ela é uma fonte serifada de altíssimo padrão, muito usada por marcas de luxo, joalherias e estética *clean girl*. Ela transmite um ar refinado, profissional e combina perfeitamente com a tipografia clássica do seu nome e com a sua foto de perfil (`image_3d61a1.jpg`).
+
+Aqui está o código HTML atualizado com essa nova fonte aplicada ao título **"UGC Creator"**:
+
+```html
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -8,10 +13,10 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 
-  <!-- Fonts -->
+  <!-- Fonts (Incluindo a Cormorant Garamond para o subtítulo ultra elegante) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -37,9 +42,10 @@
       font-family: 'Playfair Display', serif;
     }
 
-    .font-script {
-      font-family: 'Dancing Script', cursive;
-      color: var(--gold);
+    /* Classe exclusiva para a fonte de alta costura Cormorant Garamond */
+    .font-elegante {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
     }
 
     .fade-in {
@@ -79,7 +85,12 @@
       </div>
 
       <h1 class="font-display text-3xl font-bold">Aniklecia Estevam</h1>
-      <p class="font-script mt-1 text-4xl">UGC Creator</p>
+      
+      <!-- Subtítulo UGC CREATOR com a fonte Cormorant Garamond Italic Premium -->
+      <p class="font-elegante text-4xl font-medium mt-1 text-[var(--gold)] tracking-wide lowercase first-letter:uppercase">
+        UGC Creator
+      </p>
+
       <p class="mt-4 leading-relaxed text-[var(--muted)] text-center">
         Não é sobre publicidade. É sobre conexão — e é isso que gera conversão.
       </p>
@@ -272,3 +283,5 @@
 
 </body>
 </html>
+
+```
